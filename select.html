@@ -1,0 +1,44 @@
+<html>
+<head>
+</head>
+<body>
+
+<h2>Pick your Class</h2>
+	<select name="color" class="change" tabindex="4">
+      <option value="">Please select a color</option>
+      <option value="Kidservatory">Kidservatory</option>
+      <option value="Showstoppers">Showstoppers</option>
+      <option value="Theater">Theater</option>
+      <option value="Company">Company</option>
+      <option value="Broadway">Broadway</option>
+       </select>
+  
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js" ></script>
+<script>
+$(document).ready(function() {
+  
+$('select[name="color"]').change(function(){
+  
+    if ($(this).val() == "Kidservatory")
+        alert("call the do something function on option Kidservatory");
+
+ else if ($(this).val() == "Showstoppers")
+        alert("call the do something function on option Showstoppers");
+
+ else if ($(this).val() == "Theater")
+        alert("call the do something function on option Theater");
+
+ else if ($(this).val() == "Company")
+        alert("call the do something function on option Company");
+    
+else if ($(this).val() == "Broadway")
+        alert("call the do something function on option Broadway");
+    
+
+	});
+});
+
+
+</script>
+</body>
+</html>
